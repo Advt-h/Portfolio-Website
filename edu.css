@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0F0F0F;
+  color: #EAEAEA;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #1E1E1E;
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  color: #EAEAEA;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #00FFFF;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00FFFF;
+}
+
+.education-section {
+  padding: 80px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #EAEAEA;
+  margin-bottom: 60px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.education-item {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #1E1E1E;
+  position: relative;
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.edu-year {
+  color: #00FFFF;
+  font-size: 0.95rem;
+  font-weight: 600;
+  min-width: 120px;
+  padding-top: 5px;
+}
+
+.edu-content {
+  flex: 1;
+}
+
+.edu-content h2 {
+  font-size: 1.5rem;
+  color: #EAEAEA;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.institution {
+  color: #00FF88;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.description {
+  color: #BFBFBF;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.edu-meta {
+  display: flex;
+  gap: 30px;
+  color: #BFBFBF;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .education-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .edu-year {
+    min-width: auto;
+  }
+}

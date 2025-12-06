@@ -12,11 +12,14 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="projects.css">
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
   <!-- Navbar -->
   <nav>
-    <span class="logo">Advait.Me</span>
+    <a href="root.html" style="text-decoration: none;"><span class="logo">Advait.Me</span></a>
     <div class="nav-links">
       <a href="root.html" class="nav-link">Home</a>
       <a href="edu.html" class="nav-link">Education</a>
@@ -85,5 +88,33 @@
       </div>
     </div>
   </section>
+
+  <script>
+    $(document).ready(function() {
+      // Animate project items on scroll
+      $('.project-item').each(function(index) {
+        $(this).css({
+          'opacity': '0',
+          'transform': 'translateY(30px)'
+        }).delay(index * 100).animate({
+          'opacity': '1'
+        }, 600);
+        
+        $(this).css('transform', 'translateY(0)');
+      });
+      
+      // Enhanced hover effect with jQuery
+      $('.project-item').hover(
+        function() {
+          $(this).find('h2').css('color', '#00FF88');
+          $(this).css('padding-left', '15px');
+        },
+        function() {
+          $(this).find('h2').css('color', '#EAEAEA');
+          $(this).css('padding-left', '0');
+        }
+      );
+    });
+  </script>
 </body>
 </html>

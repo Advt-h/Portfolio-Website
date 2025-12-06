@@ -15,7 +15,8 @@ body {
 nav {
   background-color: #1E1E1E;
   width: 100%;
-  padding: 18px 50px;
+  height: 70px;
+  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,40 +92,25 @@ nav {
 
 .skill-list {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .skill-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid #1E1E1E;
-  transition: all 0.2s ease;
-}
-
-.skill-item:last-child {
-  border-bottom: none;
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #1E1E1E;
+  border-radius: 6px;
+  color: #EAEAEA;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #2A2A2A;
 }
 
 .skill-item:hover {
-  padding-left: 10px;
-}
-
-.skill-item:hover .skill-name {
+  background-color: #2A2A2A;
   color: #00FFFF;
-}
-
-.skill-name {
-  color: #EAEAEA;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.skill-level {
-  color: #BFBFBF;
-  font-size: 0.9rem;
-  font-weight: 500;
+  border-color: #00FFFF;
+  transform: translateY(-2px);
 }

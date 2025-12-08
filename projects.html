@@ -5,19 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio | Projects</title>
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="projects.css">
   
-  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-  <!-- Navbar -->
   <nav>
     <a href="root.html" style="text-decoration: none;"><span class="logo">Advait.Me</span></a>
     <div class="nav-links">
@@ -30,7 +26,6 @@
     </div>
   </nav>
 
-  <!-- Projects Section -->
   <section class="projects-section">
     <h1 class="page-title">Projects</h1>
     
@@ -91,7 +86,6 @@
 
   <script>
     $(document).ready(function() {
-      // Animate project items on scroll
       $('.project-item').each(function(index) {
         $(this).css({
           'opacity': '0',
@@ -103,7 +97,6 @@
         $(this).css('transform', 'translateY(0)');
       });
       
-      // Enhanced hover effect with jQuery
       $('.project-item').hover(
         function() {
           $(this).find('h2').css('color', '#00FF88');
